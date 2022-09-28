@@ -30,9 +30,11 @@ interface LinkItemProps {
     }[]
 }
 const LinkItems: Array<LinkItemProps> = [
-    { name: 'Ozoir-la-Ferrière', icon: FiHome, subMenus: [{
-            name: 'Studio F2', badge: 'RDC', path: '/ozoir-la-ferriere/rdc/studio-f2'
-        }] },
+    { name: 'Ozoir-la-Ferrière', icon: FiHome, subMenus: [
+            { name: 'Studio F2', badge: 'RDC', path: '/ozoir-la-ferriere/rdc/studio-f2' },
+            { name: 'Appartement 2D', badge: '2 E', path: '/ozoir-la-ferriere/etage-2/appartement-droite/' },
+        ]
+    },
 ];
 
 export default function SideBar({ children }: { children: ReactNode }) {
@@ -86,11 +88,11 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
                 <Flex
                     key={index}
                     align="center"
-                    p="4"
-                    mx="4"
+                    p="2"
+                    mx="2"
                     display={"row"}
                 >
-                    <Text>
+                    <Text fontSize={"16px"}>
                         <Icon
                             mr="2"
                             fontSize="16"
@@ -100,7 +102,9 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
                     </Text>
                     {menu.subMenus?.map((subMenu) => (
                         <NavItem key={subMenu.name} path={subMenu.path}>
-                            <Badge mr={2}>RDC</Badge> {subMenu.name}
+                            <Text fontSize={"14px"}>
+                                <Badge mr={2}>{subMenu.badge}</Badge> {subMenu.name}
+                            </Text>
                         </NavItem>
                     ))}
                 </Flex>
