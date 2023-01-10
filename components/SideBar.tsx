@@ -34,7 +34,7 @@ const LinkItems: Array<LinkItemProps> = [
             { name: 'Studio F2', badge: 'RDC', path: '/ozoir-la-ferriere/rdc/studio-f2' },
             { name: 'T2', badge: 'RDC', path: '/ozoir-la-ferriere/rdc/t2' },
             { name: 'T3 Duplex', badge: 'RDC', path: '/ozoir-la-ferriere/rdc/t3-duplex' },
-            { name: 'Appartement 2D', badge: '2 E', path: '/ozoir-la-ferriere/etage-2/appartement-droite/' },
+            { name: 'T3', badge: '2 E', path: '/ozoir-la-ferriere/etage-2/appartement-droite/' },
         ]
     },
 ];
