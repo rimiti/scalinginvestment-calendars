@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
-import OzoirLaFerriereRdcStudioF2 from "./ozoir-la-ferriere/rdc/studio-f2";
+import AppartmentA from "./appartments/a";
 
 const Home: NextPage = () => {
-    return <OzoirLaFerriereRdcStudioF2/>
+    return <AppartmentA/>
 }
 
 export default Home
