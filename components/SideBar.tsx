@@ -19,6 +19,7 @@ import {
 } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 interface LinkItemProps {
     name: string;
@@ -76,6 +77,7 @@ interface SidebarProps extends BoxProps {
 }
 
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
+    const router = useRouter();
     return (
         <Box
             bg={useColorModeValue('white', 'gray.900')}
@@ -97,7 +99,10 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
                     mx="2"
                     display={"row"}
                 >
-                    <Text fontSize={"16px"}>
+                    <Text
+                        fontSize={"16px"}
+                        fontWeight={menu.subMenus?.some(s => s.path === router.asPath) ? 'bold' : 'normal'}
+                    >
                         <Icon
                             mr="2"
                             fontSize="16"
@@ -123,6 +128,9 @@ interface NavItemProps extends FlexProps {
     children: ReactNode;
 }
 const NavItem = ({ children, path, ...rest }: NavItemProps) => {
+    const router = useRouter();
+    const isActive = router.asPath === path;
+
     return (
         <Link href={path} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
             <Flex
@@ -130,7 +138,9 @@ const NavItem = ({ children, path, ...rest }: NavItemProps) => {
                 m='4'
                 role="group"
                 cursor="pointer"
-                {...rest}>
+                fontWeight={isActive ? 'bold' : 'normal'}
+                {...rest}
+            >
                 {children}
             </Flex>
         </Link>
