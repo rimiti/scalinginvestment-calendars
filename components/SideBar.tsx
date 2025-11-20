@@ -35,6 +35,9 @@ const LinkItems: Array<LinkItemProps> = [
             { name: 'T3', badge: 'Porte B', path: '/appartments/b' },
             { name: 'T2', badge: 'Porte C', path: '/appartments/c' },
             { name: 'T3 Duplex', badge: 'Porte D', path: '/appartments/d' },
+            { name: 'T3', badge: 'Porte E', path: '/appartments/e' },
+            { name: 'T3', badge: 'Porte F', path: '/appartments/f' },
+            { name: 'T3', badge: 'Porte G', path: '/appartments/g' },
         ]
     },
 ];

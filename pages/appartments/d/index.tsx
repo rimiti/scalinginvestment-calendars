@@ -7,7 +7,7 @@ const calendar = () => {
             <title>Calendrier: D</title>
         </Head>
         <Calendar
-            url="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&showCalendars=0&src=cXNjdTIzdGgyM3FlM2VwZmhiMDVqcWFoMDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=c2ZyYjJ1azQyMmd1ZXRhdDRvbmxoYnVkNzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F4511E&color=%23F4511E"/>
+            url="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FParis&showTz=0&showCalendars=0&showPrint=0&showTitle=0&hl=fr_FR&src=OWZiY2JjZmRlMjcxOGFhMDI1YTBlYTdlOTg5MjhmZTAyMGI5ZTc0ODc2MmYyMDFjZGZkNDgwYjBjNThjOWQzY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZmE0ZTdjZGI2OWI0NWJkNTY1ZDhmNmMwNTA5YjFkMTk4NzMyYzA2NzlhMmE4MGNkYWQzM2ZhYjg0ZTk5YWY0ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%23039be5"/>
     </>
 }
 
